@@ -5,6 +5,7 @@
   "scripts": {
     "prestart":"node ./scripts/getRoutes.js",
     "start": "vite",
+    "createPage":"node ./scripts/createPage.js",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
