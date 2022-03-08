@@ -1,9 +1,8 @@
-import { useRoutes } from 'react-router-dom'
+import { useRoutes } from "react-router-dom";
 import { RouterConfig } from "./routes";
 
-
 function App() {
-  const elements = useRoutes(RouterConfig)
+  const elements = useRoutes(RouterConfig);
   return elements;
 }
 

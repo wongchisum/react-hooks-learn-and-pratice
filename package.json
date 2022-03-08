@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "prestart":"node ./scripts/getRoutes.js",
-    "start": "vite",
-    "createPage":"node ./scripts/createPage.js",
+    "start": "yarn updateRoutes && yarn updateExported && vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "updateRoutes": "node ./scripts/updateRoutes.js",
+    "updateExported": "node ./scripts/updateExported.js",
+    "createPage": "node ./scripts/createPage.js"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -16,9 +17,11 @@
     "react-router-dom": "^6.2.2"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7",
+    "@vitejs/plugin-react": "^1.2.0",
+    "less": "^4.1.2",
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   }
